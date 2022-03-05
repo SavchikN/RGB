@@ -18,11 +18,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        colorView.layer.cornerRadius = 10
         
-        redAlpha.text = ""
+        redAlpha.text = String(format: "%.2f", redSlider.value)
+        greenAlpha.text = String(format: "%.2f", greenSlider.value)
+        blueAlpha.text = String(format: "%.2f", blueSlider.value)
+        
         redSlider.minimumTrackTintColor = .red
         greenSlider.minimumTrackTintColor = .green
         blueSlider.minimumTrackTintColor = .blue
+        
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
@@ -42,9 +47,8 @@ class ViewController: UIViewController {
     
     @IBAction func sliderChangedColor() {
         changeColor()
-        redAlpha.text = String(round(redSlider.value * 100) / 100.0)
-        greenAlpha.text = String(round(greenSlider.value * 100) / 100.0)
-        blueAlpha.text = String(round(blueSlider.value * 100) / 100.0)
+        redAlpha.text = String(format: "%.2f", redSlider.value)
+        greenAlpha.text = String(format: "%.2f", greenSlider.value)
+        blueAlpha.text = String(format: "%.2f", blueSlider.value)
     }
 }
-
