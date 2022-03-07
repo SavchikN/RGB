@@ -110,13 +110,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueAlpha" destination="wgH-Kt-Qfg" id="fqe-Zq-EWP"/>
                         <outlet property="blueSlider" destination="XmI-lb-Ain" id="0ew-NS-Xdi"/>
+                        <outlet property="blueSliderValue" destination="wgH-Kt-Qfg" id="fqe-Zq-EWP"/>
                         <outlet property="colorView" destination="xda-UB-cSP" id="Azz-8j-gNE"/>
-                        <outlet property="greenAlpha" destination="XZQ-Sp-EIY" id="7E0-8k-U84"/>
                         <outlet property="greenSlider" destination="hMr-v1-8uv" id="gfc-Kh-JOj"/>
-                        <outlet property="redAlpha" destination="BpH-Vv-eQA" id="Kfq-0d-lrd"/>
+                        <outlet property="greenSliderValue" destination="XZQ-Sp-EIY" id="7E0-8k-U84"/>
                         <outlet property="redSlider" destination="dTX-S3-afp" id="Zct-uC-OOd"/>
+                        <outlet property="redSliderValue" destination="BpH-Vv-eQA" id="Kfq-0d-lrd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
